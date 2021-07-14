@@ -1,6 +1,6 @@
 using System;
 
-namespace StockOut.API
+namespace SupplyChain.API
 {
     public class WeatherForecast
     {
