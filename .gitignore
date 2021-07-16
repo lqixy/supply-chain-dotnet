@@ -242,3 +242,4 @@ ModelManifest.xml
 
 # Paket dependency manager
 .paket/paket.exe
+/SupplyChain/SupplyChain.HttpApi/appsettings.json

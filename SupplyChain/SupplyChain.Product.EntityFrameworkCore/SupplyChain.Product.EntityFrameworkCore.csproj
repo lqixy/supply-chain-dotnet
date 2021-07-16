@@ -6,14 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.2.0" />
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SupplyChain.Common\SupplyChain.Common.csproj" />
-    <ProjectReference Include="..\SupplyChain.Product.Application.Contracts\SupplyChain.Product.Application.Contracts.csproj" />
+    <ProjectReference Include="..\SupplyChain.EntityFrameworkCore\SupplyChain.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\SupplyChain.Product.Domain\SupplyChain.Product.Domain.csproj" />
-    <ProjectReference Include="..\SupplyChain\SupplyChain.csproj" />
   </ItemGroup>
 
 </Project>
