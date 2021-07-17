@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace SupplyChain.Product.Application
 {
-    public class ProductAppService : SupplyChainAppServiceBase
-        , IProductAppService
+    public class ProductAppService :
+        IProductAppService
     {
         private readonly IProductRepository productRepository;
         private readonly IMapper mapper;

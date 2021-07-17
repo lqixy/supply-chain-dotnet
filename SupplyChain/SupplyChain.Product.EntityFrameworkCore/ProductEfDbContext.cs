@@ -13,7 +13,7 @@ namespace SupplyChain.Product.EntityFrameworkCore
     public class ProductEfDbContext : DbContext
         //: SupplyChainDbContextBase
     {
-        public DbSet<ProductInfo> ProductInfos { get; set; }
+        //public DbSet<ProductInfo> ProductInfos { get; set; }
 
         public ProductEfDbContext(DbContextOptions<ProductEfDbContext> options) : base(options) { }
 

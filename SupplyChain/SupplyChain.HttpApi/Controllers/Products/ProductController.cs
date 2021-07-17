@@ -17,20 +17,17 @@ namespace SupplyChain.HttpApi.Controllers.Products
         private readonly IProductAppService productAppService;
         private readonly IMapper mapper;
         public ProductController(IProductAppService productAppService
-, IMapper mapper
-            //, IObjectMapper objectMapper
+, IMapper mapper 
             )
         {
             this.productAppService = productAppService;
-            this.mapper = mapper;
-            //this.objectMapper = objectMapper;
+            this.mapper = mapper; 
         }
 
         [HttpGet(@"{id}")]
         public async Task<ProductInfoOutput> Get(int id)
         {
-            var result = await productAppService.Get(id);
-            //return objectMapper.Map<ProductInfoOutput>(result);
+            var result = await productAppService.Get(id); 
             return mapper.Map<ProductInfoOutput>(result);
         }
     }

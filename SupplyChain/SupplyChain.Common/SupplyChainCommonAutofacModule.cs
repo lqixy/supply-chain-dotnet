@@ -1,10 +1,4 @@
-﻿using Autofac;
-using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Autofac; 
 
 namespace SupplyChain.Common
 {
@@ -13,23 +7,16 @@ namespace SupplyChain.Common
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.Register(c => new MapperConfiguration(cfg =>
-             {
-                 cfg.AddMaps(System.AppDomain.CurrentDomain.GetAssemblies());
-             }))
-                .AsSelf().SingleInstance();
+            //builder.Register(c => new MapperConfiguration(cfg =>
+            // {
+            //     cfg.AddMaps(System.AppDomain.CurrentDomain.GetAssemblies());
+            // }))
+            //    .AsSelf().SingleInstance();
 
-            builder.Register(c => c.Resolve<MapperConfiguration>().CreateMapper(c.Resolve))
-                .As<IMapper>()
-                .InstancePerLifetimeScope();
-
-            //builder.RegisterType<MapperConfiguration>()
-            //    .As<IConfigurationProvider>()
+            //builder.Register(c => c.Resolve<MapperConfiguration>().CreateMapper(c.Resolve))
+            //    .As<IMapper>()
             //    .InstancePerLifetimeScope();
-
-            //builder.RegisterType<ObjectMappings.IObjectMapper>()
-            //    .As<AutoMapper.AutoMapper>()
-            //    .InstancePerLifetimeScope();
+              
         }
     }
 }

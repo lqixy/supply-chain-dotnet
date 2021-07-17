@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using SupplyChain.Common;
+using SupplyChain.Dependencies;
 using SupplyChain.Product.Application.Contracts.Services;
 using System;
 using System.Collections.Generic;
@@ -10,14 +11,14 @@ using System.Threading.Tasks;
 namespace SupplyChain.Product.Application
 {
     public class SupplyChainProductApplicationAutofacModule
-        : Autofac.Module
+        : BaseModule
     {
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<ProductAppService>()
                 .As<IProductAppService>()
-                .InstancePerLifetimeScope();
-            builder.RegisterModule(new SupplyChainCommonAutofacModule());
+                .SingleInstance();
+            //builder.RegisterModule(new SupplyChainCommonAutofacModule());
         }
     }
 }

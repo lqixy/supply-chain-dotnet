@@ -16,7 +16,7 @@ namespace SupplyChain.Product.EntityFrameworkCore
         {
             builder.RegisterType<ProductRepository>()
                 .As<IProductRepository>()
-                .InstancePerLifetimeScope();
+                .SingleInstance();
         }
     }
 }
