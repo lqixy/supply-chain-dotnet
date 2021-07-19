@@ -4,4 +4,18 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\project\dotnet\supply-chain-dotnet\SupplyChain\SupplyChain.StockIn.Application.Contracts\SupplyChain.StockIn.Application.Contracts.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SupplyChain.StockIn.Domain.Shared\SupplyChain.StockIn.Domain.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

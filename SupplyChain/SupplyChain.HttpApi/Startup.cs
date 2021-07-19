@@ -7,10 +7,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using SupplyChain.NewtonJsons;
 using SupplyChain.Product.Application;
 using SupplyChain.Product.EntityFrameworkCore;
 using SupplyChain.StockIn.Application;
 using SupplyChain.StockIn.EntityFrameworkCore;
+using System.IO;
 
 namespace SupplyChain.HttpApi
 {
@@ -26,19 +28,24 @@ namespace SupplyChain.HttpApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers()
+                .AddNewtonsoftJson(options =>
+                {
+                    options.SerializerSettings.ContractResolver = new SupplyChainMvcContractResolver()
+                    {
+                        NamingStrategy = new SupplyChainCamelCaseNamingStrategy()
+                    };
+                });
 
             services.AddCustomEfDbContext(Configuration);
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SupplyChain.HttpApi", Version = "v1" });
-            });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "¹©Ó¦Á´APIÎÄµµ", Version = "v1" });
+                var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
 
-            //var config = new MapperConfiguration(configure =>
-            //{
-            //    configure.AddMaps(System.AppDomain.CurrentDomain.GetAssemblies());
-            //});
-            //config.CreateMapper();
+                c.IncludeXmlComments(string.Format(@"{0}\SupplyChain.HttpApi.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+                c.IncludeXmlComments(string.Format(@"{0}\SupplyChain.StockIn.Application.Contracts.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+            });
 
         }
 
@@ -58,8 +65,6 @@ namespace SupplyChain.HttpApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SupplyChain.HttpApi v1"));
             }
-
-            //app.ApplicationServices.GetAutofacRoot();
 
             app.UseHttpsRedirection();
 

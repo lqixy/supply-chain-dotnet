@@ -20,9 +20,9 @@ namespace SupplyChain.Product.EntityFrameworkCore.Repositories
 
         public async Task<ProductInfo> Get(int id)
         {
-            //return await context.ProductInfos
-            //    .FirstOrDefaultAsync(x => x.Id == id);
-            return new ProductInfo();
+            return await context.ProductInfos
+                .FirstOrDefaultAsync(x => x.Id == id);
+            //return new ProductInfo();
         }
 
     }

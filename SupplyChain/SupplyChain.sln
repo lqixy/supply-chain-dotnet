@@ -49,17 +49,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.Dapper", "Suppl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.StockIn.EntityFrameworkCore", "SupplyChain.StockIn.EntityFrameworkCore\SupplyChain.StockIn.EntityFrameworkCore.csproj", "{BBE148D7-8841-4DB0-9B18-61DB7F0AA2FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupplyChain.StockOut.Application", "SupplyChain.StockOut.Application\SupplyChain.StockOut.Application.csproj", "{5205D770-8C43-4C6F-A9F4-094A2848E9C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.StockOut.Application", "SupplyChain.StockOut.Application\SupplyChain.StockOut.Application.csproj", "{5205D770-8C43-4C6F-A9F4-094A2848E9C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupplyChain.StockOut.Application.Contracts", "SupplyChain.StockOut.Application.Contracts\SupplyChain.StockOut.Application.Contracts.csproj", "{7D70BE05-CA3F-470B-8BA6-3166BCA5E7E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.StockOut.Application.Contracts", "SupplyChain.StockOut.Application.Contracts\SupplyChain.StockOut.Application.Contracts.csproj", "{7D70BE05-CA3F-470B-8BA6-3166BCA5E7E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupplyChain.StockOut.Domain", "SupplyChain.StockOut.Domain\SupplyChain.StockOut.Domain.csproj", "{0B980B2F-13D7-489E-8FCD-7EF4797BA87B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.StockOut.Domain", "SupplyChain.StockOut.Domain\SupplyChain.StockOut.Domain.csproj", "{0B980B2F-13D7-489E-8FCD-7EF4797BA87B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupplyChain.StockOut.Domain.Shared", "SupplyChain.StockOut.Domain.Shared\SupplyChain.StockOut.Domain.Shared.csproj", "{0312849B-CDB5-4591-B777-08C439B13DD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.StockOut.Domain.Shared", "SupplyChain.StockOut.Domain.Shared\SupplyChain.StockOut.Domain.Shared.csproj", "{0312849B-CDB5-4591-B777-08C439B13DD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupplyChain.StockOut.EntityFrameworkCore", "SupplyChain.StockOut.EntityFrameworkCore\SupplyChain.StockOut.EntityFrameworkCore.csproj", "{CB0F1AC6-A017-4F31-AB83-4EB38A75D556}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.StockOut.EntityFrameworkCore", "SupplyChain.StockOut.EntityFrameworkCore\SupplyChain.StockOut.EntityFrameworkCore.csproj", "{CB0F1AC6-A017-4F31-AB83-4EB38A75D556}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupplyChain.Product.Application.Test", "SupplyChain.Product.Application.Test\SupplyChain.Product.Application.Test.csproj", "{C4CEB79D-ED53-4B5C-BF51-7E51EDB57F29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.Product.Application.Test", "SupplyChain.Product.Application.Test\SupplyChain.Product.Application.Test.csproj", "{C4CEB79D-ED53-4B5C-BF51-7E51EDB57F29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Purchases", "Purchases", "{F194ED73-CFA7-4AB7-BDAE-1B03E6C18378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -190,6 +192,7 @@ Global
 		{0312849B-CDB5-4591-B777-08C439B13DD6} = {9661F841-CDC7-40FF-A873-40CA63D5C835}
 		{CB0F1AC6-A017-4F31-AB83-4EB38A75D556} = {9661F841-CDC7-40FF-A873-40CA63D5C835}
 		{C4CEB79D-ED53-4B5C-BF51-7E51EDB57F29} = {72461C26-C6AE-469F-93B5-E6B023F9DA9F}
+		{F194ED73-CFA7-4AB7-BDAE-1B03E6C18378} = {1B496F4E-36B1-46FD-AFC4-0527AF8F89F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3FBFA29F-1F88-46CD-936D-33DEAA2BF2DC}

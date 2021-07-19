@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SupplyChain.StockIn.Application.Contracts</name>
+    </assembly>
+    <members>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateStockInOrderCommand.InType">
+            <summary>
+            入库类型
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateStockInOrderCommand.StoreId">
+            <summary>
+            仓库标识
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateStockInOrderCommand.OddNum">
+            <summary>
+            入库单号
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateStockInOrderCommand.Operator">
+            <summary>
+            操作人
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateStockInOrderCommand.TenantInfoId">
+            <summary>
+            商户标识
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateStockInOrderCommand.CustomData">
+            <summary>
+            自定义json数据
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateStockInOrderCommand.Append">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderProductItem">
+            <summary>
+            入库单商品信息
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderProductItem.SkuId">
+            <summary>
+            条码
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderProductItem.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderProductItem.ProductName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderProductItem.SpecpropInfo">
+            <summary>
+            商品规格
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderProductItem.Price">
+            <summary>
+            采购单价
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderProductItem.BatchNo">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="T:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem">
+            <summary>
+            入库单追加信息
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem.RetundOrder">
+            <summary>
+            退货单号
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem.PreDictDate">
+            <summary>
+            到货时间 yyyy-MM-dd HH:mm:ss
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem.SupplyId">
+            <summary>
+            供应商id
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem.SupplyName">
+            <summary>
+            供应商名称
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem.PurchasesId">
+            <summary>
+            采购单id
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem.InterNalNo">
+            <summary>
+            供应链内部订单号
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Commands.CreateInOrderAppendItem.PurchaseIds">
+            <summary>
+            采购单ids---v2.8.0
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.Type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.StoreId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.SupplyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.SupplyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.OutRemark">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.IsPush">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.PredictDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.RefundOrder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.ProcessStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.PushDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.Manager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.ManagerId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.OddNum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.PurchasesNum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.AddDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.UpdateDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.Timestamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.TenantId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.InternalNo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.Source">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderDto.CustomData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.StorageInOrderId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.ProcessStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.BeforeProcessStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.Remark">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.AvailableStock">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.AddDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.StockIn.Application.Contracts.Dto.StockInOrderFlowDto.UpdateDate">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

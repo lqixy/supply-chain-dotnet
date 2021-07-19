@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SupplyChain.HttpApi</name>
+    </assembly>
+    <members>
+        <member name="P:SupplyChain.HttpApi.Controllers.Products.ViewModels.Outpus.ProductInfoOutput.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SupplyChain.HttpApi.Controllers.Products.ViewModels.Outpus.ProductInfoOutput.Name">
+            <summary>
+            商品名称
+            </summary>
+        </member>
+        <member name="M:SupplyChain.HttpApi.Controllers.StockIn.StockInOrderController.Create(SupplyChain.StockIn.Application.Contracts.Commands.CreateStockInOrderCommand)">
+            <summary>
+            创建入库单
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
